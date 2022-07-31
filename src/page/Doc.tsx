@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Topnav from "../components/Topnav";
+import ButtonDemo from "../components/ButtonDemo/ButtonDemo";
 import { Routes, Route, Link, useLocation } from "react-router-dom";
 import "./Doc.scss";
 import { ReactComponent as Intro } from "../markdown/intro.md";
@@ -84,6 +85,7 @@ const Doc: React.FC<{}> = () => {
             <Route path="/" element={<Intro />} />
             <Route path="/install" element={<Install />} />
             <Route path="/get-started" element={<GetStarted />} />
+            <Route path="/button" element={<ButtonDemo />} />
           </Routes>
         </main>
       </div>
